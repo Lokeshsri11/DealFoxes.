@@ -6,7 +6,6 @@ Disallow: /private/
 Disallow: /tmp/
 
 # Allow all bots to access the main parts of your website
-User-agent: *
 Allow: /
 
 # Specify the location of the sitemap
