@@ -1,0 +1,13 @@
+# Block all bots from accessing sensitive files or directories
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /tmp/
+
+# Allow all bots to access the main parts of your website
+User-agent: *
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://dealfoxes.com/sitemap.xml
