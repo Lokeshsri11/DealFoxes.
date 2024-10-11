@@ -26008,137 +26008,168 @@
             <nav class="header-nav">
                 <div class="container">
                     <ul class="nav links clearfix">
-                        <li>
-                            <a class="font-weight-medium">
-                                Categories
-                                <span>
-                                    <i class="df-arrow-gen-down"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li class="">
-                                    
-                                   <a href="/categories/accessories.html"title="Accessories">Accessories</a>
-                                </li>
-                                <li class="">
-                                    <span data-href="#"
-                                        title="Art">Art</span>
-                                </li>
-                                <li class="">
-                                    <span data-href="#"
-                                        title="Automotive">Automotive</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#"
-                                        title="Baby">Baby</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#"
-                                        title="Beauty">Beauty</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#"
-                                        title="Business & Services">Business & Services</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#"
-                                        title="Clothing">Clothing</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#"
-                                        title="Department Stores">Department Stores</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#"
-                                        title="Electronics">Electronics</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#"
-                                        title="Entertainment">Entertainment</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#" class="link">View
-                                        All Categories</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="font-weight-medium">
-                                Stores
-                                <span>
-                                    <i class="df-arrow-gen-down"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">Kohl's</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">Target</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#">Best
-                                        Buy</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">JOANN</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">Macy's</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">Walmart</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">JCPenney</span>
-                                </li>
-                                <li class="be-link">
-                                    <span
-                                        data-href="#">GrubHub</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#">Home
-                                        Depot</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#">American
-                                        Eagle</span>
-                                </li>
-                                <li class="be-link">
-                                    <span data-href="#" class="link">View
-                                        All Stores</span>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a class="font-weight-medium">
-                                Help
-                                <span>
-                                    <i class="df-arrow-gen-down"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#" rel="noopener">Help Center</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                            </ul>
-                        </li>
-                  
-                        <li>
-                            <a href="#" class="font-weight-medium">Blog</a>
-                        </li>
+                        <style>
+                            /* Google Fonts Import Link */
+                            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+                    
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                    
+                            body {
+                                height: 100vh;
+                                /* display: flex; */
+                                align-items: center;
+                                justify-content: center;
+                                background: #ffffff;
+                            }
+                    
+                            .nav-links {
+                                display: flex;
+                                align-items: center;
+                                /* background: #ffffff; */
+                                padding: 20px 15px;
+                                border-radius: 12px;
+                                /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+                            }
+                    
+                            .nav-links li {
+                                list-style: none;
+                                margin: 0 20px;
+                                position: relative;
+                            }
+                    
+                            .nav-links li a {
+                                position: relative;
+                                color: #ff7f50;
+                                font-size: 20px;
+                                font-weight: 500;
+                                padding: 6px 0;
+                                text-decoration: none;
+                            }
+                    
+                            .nav-links li a:before {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                height: 3px;
+                                width: 0%;
+                                background: #34efdf;
+                                border-radius: 12px;
+                                transition: all 0.4s ease;
+                            }
+                    
+                            .nav-links li a:hover:before {
+                                width: 100%;
+                            }
+                    
+                            .nav-links li.center a:before {
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                    
+                            .nav-links li.upward a:before {
+                                width: 100%;
+                                bottom: -5px;
+                                opacity: 0;
+                            }
+                    
+                            .nav-links li.upward a:hover:before {
+                                bottom: 0px;
+                                opacity: 1;
+                            }
+                    
+                            .nav-links li.forward a:before {
+                                width: 100%;
+                                transform: scaleX(0);
+                                transform-origin: right;
+                                transition: transform 0.4s ease;
+                            }
+                    
+                            .nav-links li.forward a:hover:before {
+                                transform: scaleX(1);
+                                transform-origin: left;
+                            }
+                    
+                            /* Dropdown styles */
+                            .submenu {
+                                display: none;
+                                position: absolute;
+                                left: 0;
+                                top: 100%;
+                                background-color: #ffffff;
+                                border: 1px solid #ddd;
+                                border-radius: 8px;
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                padding: 10px 0;
+                                z-index: 1000;
+                            }
+                    
+                            .nav-links li:hover .submenu {
+                                display: block;
+                            }
+                    
+                            .submenu li {
+                                margin: 0;
+                            }
+                    
+                            .submenu li a {
+                                padding: 8px 15px;
+                                color: #333;
+                                font-size: 16px;
+                                display: block;
+                                transition: background 0.3s;
+                            }
+                    
+                            .submenu li a:hover {
+                                background: #f0f0f0;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="#" class="upward">Categories</a>
+                                <ul class="submenu">
+                                    <li><a href="/categories/accessories.html" title="Accessories">Accessories</a></li>
+                                    <li><a href="#" title="Art">Art</a></li>
+                                    <li><a href="#" title="Automotive">Automotive</a></li>
+                                    <li><a href="#" title="Baby">Baby</a></li>
+                                    <li><a href="#" title="Beauty">Beauty</a></li>
+                                    <li><a href="#" title="Business & Services">Business & Services</a></li>
+                                    <li><a href="#" title="Clothing">Clothing</a></li>
+                                    <li><a href="#" title="Department Stores">Department Stores</a></li>
+                                    <li><a href="#" title="Electronics">Electronics</a></li>
+                                    <li><a href="#" title="Entertainment">Entertainment</a></li>
+                                    <li><a href="#" class="view-all">View All Categories</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="forward">Stores</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Kohl's</a></li>
+                                    <li><a href="#">Target</a></li>
+                                    <li><a href="#">Best Buy</a></li>
+                                    <li><a href="#">JOANN</a></li>
+                                    <li><a href="#">Macy's</a></li>
+                                    <li><a href="#">Walmart</a></li>
+                                    <li><a href="#">JCPenney</a></li>
+                                    <li><a href="#">GrubHub</a></li>
+                                    <li><a href="#">Home Depot</a></li>
+                                    <li><a href="#">American Eagle</a></li>
+                                    <li><a href="#" class="view-all">View All Stores</a></li>
+                                </ul>
+                            </li>
+                            <li class="center">
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    
+                        
                         <li class="specials">
                             <ol>
                                 <li class="special">
@@ -26174,6 +26205,23 @@
                                 </li>
                             </ol>
                         </li>
+<br>
+                        <li class="special">
+                            <a href="#"
+                                data-loader="trackImpression" data-track-click-event
+                                data-track-medium="dace_navigation_specials" data-track-campaign="add_to_chrome"
+                                rel="nofollow noopener" target="_blank" class="font-weight-medium">
+                                <div class="special-deal add-extension-to-chrome">
+                                    <img src="/www.dontpayfull.com/images/menu/contact-us-11.png"
+                                        height="19" width="19" alt="Chrome Browser Icon">
+                                    <b>Contact Us</b>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+
+                       
                     </ul>
                 </div>
             </nav>
