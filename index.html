@@ -26186,19 +26186,18 @@
         <main>
             <section class="homepage banners bg-white">
                 <div class="container">
-                    <div class="owl-carousel">
+                    <div class="owl-carousel owl-theme">
                         <div class="item">
                             <a href="#">
-                                <video autoplay muted loop style="width:100%; height: 350px;;">
+                                <video autoplay muted loop class="responsive-video">
                                     <source src="/www.dontpayfull.com/images/banners/s.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </a>
-                            
                         </div>
                         <div class="item">
                             <a href="#">
-                                <video autoplay muted loop style="width:100%; height: 350px;;">
+                                <video autoplay muted loop class="responsive-video">
                                     <source src="/www.dontpayfull.com/images/banners/q.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -26207,41 +26206,77 @@
                     </div>
                 </div>
             </section>
-
-    
-
-
+            
             <section class="homepage banners bg-white">
                 <div class="container">
-                    <div class="owl-carousel">
+                    <div class="owl-carousel owl-theme">
                         <div class="item">
                             <a href="#">
-                                <img src="/www.dontpayfull.com/images/banners/sl_051121_42790_03.jpg" alt="Description of Image 1" style="width:100%; height: 350px;">
+                                <img src="/www.dontpayfull.com/images/banners/sl_051121_42790_03.jpg" alt="Description of Image 1" class="responsive-image">
                             </a>
                         </div>
                         <div class="item">
                             <a href="#">
-                                <img src="/www.dontpayfull.com/images/banners/sl_051121_42790_94.jpg" alt="Description of Image 2" style="width:100%; height: 350px;">
+                                <img src="/www.dontpayfull.com/images/banners/sl_051121_42790_94.jpg" alt="Description of Image 2" class="responsive-image">
                             </a>
                         </div>
                         <div class="item">
                             <a href="#">
-                                <img src="/www.dontpayfull.com/images/banners/19911.jpg" alt="Description of Image 2" style="width:100%; height: 350px;">
+                                <img src="/www.dontpayfull.com/images/banners/19911.jpg" alt="Description of Image 3" class="responsive-image">
                             </a>
                         </div>
                         <div class="item">
                             <a href="#">
-                                <img src="/www.dontpayfull.com/images/banners/SL-092921-45900-20.jpg" alt="Description of Image 2" style="width:100%; height: 350px;">
+                                <img src="/www.dontpayfull.com/images/banners/SL-092921-45900-20.jpg" alt="Description of Image 4" class="responsive-image">
                             </a>
                         </div>
                         <div class="item">
                             <a href="#">
-                                <img src="/www.dontpayfull.com/images/banners/sl_042921_42480_112.jpg" alt="Description of Image 2" style="width:100%; height: 350px;">
+                                <img src="/www.dontpayfull.com/images/banners/sl_042921_42480_112.jpg" alt="Description of Image 5" class="responsive-image">
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!-- Add your Owl Carousel styles and scripts -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+            
+            <script>
+                $(document).ready(function() {
+                    $(".owl-carousel").owlCarousel({
+                        items: 1,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        responsive: {
+                            0: { items: 1 },
+                            600: { items: 1 },
+                            1000: { items: 1 }
+                        }
+                    });
+                });
+            </script>
+            
+            <style>
+                .responsive-video {
+                    width: 100%;
+                    height: auto;
+                }
+            
+                .responsive-image {
+                    width: 100%;
+                    height: 350px;
+                }
+            
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+            </style>
             
            
 
