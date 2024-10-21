@@ -26258,6 +26258,210 @@
 
 
 
+
+<!-- add a comaony banner with affiliate link  -->
+ <section class="homepage banners bg-white">
+    <div class="container">
+    <div class="cards-slider">
+      <div class="cards-row">
+        <!-- Card 1 -->
+        <div class="card-container">
+          <div class="card">
+            <div class="img-content">
+              <img src="https://brand.assets.adidas.com/image/upload/f_gif,fl_lossy,q_auto/originals_fw24_adicolor_hp_ct_november_d_35aef11f26.gif" height="100%" width="500px">
+            </div>
+            <div class="content">
+              <p class="heading">Adidas</p>
+              <a href="https://invol.co/cllsog0" class="get-deal-link">
+              <button class="get-deal">Get Deal</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="card-container">
+          <div class="card">
+            <div class="img-content">
+              <img src="/www.dontpayfull.com/images/menu/1709758022-devices_app_hp.png" height="100%" width="1000px">
+            </div>
+            <div class="content">
+              <p class="heading">Natural Cycles</p>
+              <a href="https://natural-cycles.sjv.io/6eQ5RN" class="get-deal-link">
+              <button class="get-deal">Get Deal</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card-container">
+          <div class="card">
+            <div class="img-content">
+              <img src="/www.dontpayfull.com/images/menu/expedia.png" height="100%" width="1000px">
+            </div>
+            <div class="content">
+              <p class="heading">Expedia</p>
+              <a href="http://expedia.com/affiliate/pYp6TSp" class="get-deal-link">
+              <button class="get-deal">Get Deal</button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="card-container">
+          <div class="card">
+            <div class="img-content">
+              <img src="/www.dontpayfull.com/images/menu/vici.png" height="100%" width="1000px">
+            </div>
+            <div class="content">
+              <p class="heading">VICI Collection</p>
+              <a href="https://kdbov.com/g/zwk9hr5h6va4a3d2a6ac7ecf6a880f/" class="get-deal-link">
+              <button class="get-deal">Get Deal</button>
+            </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="card-container">
+          <div class="card">
+            <div class="img-content">
+              <img src="/www.dontpayfull.com/images/menu/kitsca.png" height="100%" width="1000px">
+            </div>
+            <div class="content">
+              <p class="heading">Kits.ca</p>
+              <a href="https://pbee.me/A8ISa35" class="get-deal-link">
+              <button class="get-deal">Get Deal</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+<br>
+</section>
+
+
+
+  <style>
+  .cards-slider {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+  }
+  
+  .cards-row {
+    display: flex;
+    gap: 20px;
+    transition: 0.5s;
+  }
+  
+  .card-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .card-container::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    transition: scale 0.6s, rotate 0.6s, filter 1s;
+  }
+  
+  .card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    pointer-events: auto; /* Allow interactions */
+  }
+  
+  .card .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .card .content .get-deal {
+    background-color: #ff0f7b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.6s;
+    z-index: 10;
+  }
+  
+  .card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Enable pointer events on hover */
+  }
+  
+  .card:hover .img-content {
+    scale: 2.5;
+    rotate: 30deg;
+    filter: blur(7px);
+  }
+  
+  .card:hover .get-deal {
+    opacity: 1;
+  }
+</style>  
+
+
+
+
+
+
+
+
             
             
             <section class="homepage banners bg-white">
@@ -26291,6 +26495,28 @@
                     </div>
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
             <!-- Add your Owl Carousel styles and scripts -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
@@ -26333,7 +26559,7 @@
             
            
 
-
+        
 
             
 
@@ -26410,6 +26636,7 @@
                 </div>
             </section>
             
+
 
 
 
@@ -26901,6 +27128,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
 
 
@@ -27087,6 +27365,9 @@
                                     height="auto" width="480" alt="dontpayfull">
                             </a>
                         </div>
+
+
+                        
                        
                     </div>
                 </div>
@@ -27157,7 +27438,12 @@
                     </div>
                 </div>
             </div>
+        
+
+            
+
         </footer>
+
     </div>
     <div style="display: none" class=" message" id="alert-message">
         <div class="container">
@@ -27238,6 +27524,9 @@
     <div id="g_id_onload" data-client_id="525929805907-9hgo0k1nhh86u8b9jkae84ms9eveejm8.apps.googleusercontent.com"
         data-login_uri="https://www.dontpayfull.com/userssocial/register_google" data-auto_select="true"
         data-auto_prompt="true"></div>
+
+
+
     <script>
         (function () {
             function c() {
