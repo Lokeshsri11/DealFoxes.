@@ -26283,6 +26283,20 @@
     <div class="container">
     <div class="cards-slider">
       <div class="cards-row">
+        <!-- card -->
+        <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="/www.dontpayfull.com/images/menu/1.png" height="100%" width="500px">
+              </div>
+              <div class="content">
+                <p class="heading">Luxury Escapes</p>
+                <a href="" class="get-deal-link">
+                <button class="get-deal">Get Deal</button>
+                </a>
+              </div>
+            </div>
+          </div>
         <!-- Card 1 -->
         <div class="card-container">
           <div class="card">
@@ -26520,6 +26534,331 @@
 
 
 
+     
+            
+
+
+            <section class="homepage offers">
+                <div class="container">
+                    <h1 class="h3">Today's Most Popular Coupons & Deals</h1>
+                    <ol id="homepage-coupons" class="coupons-container two-cols">
+                      
+
+
+
+                        <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                    
+                            body {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                min-height: 100vh;
+                                background-color: #f3f4f6;
+                                font-family: Arial, sans-serif;
+                            }
+                    
+                            .coupon-container {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 20px;
+                                justify-content: center;
+                                max-width: 1100px;
+                                padding: 20px;
+                            }
+                    
+                            .coupon-card {
+                                border-radius: 12px;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                background: linear-gradient(135deg, #ffffff, #f3f4f6);
+                                width: 300px;
+                                overflow: hidden;
+                                border: 1px solid #e2e8f0;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                    
+                            .coupon-header {
+                                display: flex;
+                                align-items: center;
+                                padding: 15px;
+                                background-color: #1f2937;
+                                color: #ffffff;
+                                font-size: 14px;
+                            }
+                    
+                            .store-logo img {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 6px;
+                                margin-right: 10px;
+                            }
+                    
+                            .coupon-body {
+                                padding: 20px;
+                                color: #333;
+                                text-align: center;
+                            }
+                    
+                            .coupon-title {
+                                font-size: 20px;
+                                font-weight: bold;
+                                color: #2d3748;
+                                margin-bottom: 8px;
+                            }
+                    
+                            .coupon-expiry {
+                                font-size: 14px;
+                                color: #718096;
+                            }
+                    
+                            .scratch-area {
+                                position: relative;
+                                width: 250px;
+                                height: 100px;
+                                background-color: #edf2f7;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                margin: 15px auto;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            }
+                    
+                            .scratch-message {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 24px;
+                                color: #333;
+                                font-weight: bold;
+                            }
+                    
+                            .coupon-footer {
+                                background-color: #e2e8f0;
+                                padding: 10px;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #718096;
+                                font-weight: bold;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="coupon-container">
+                            <!-- Six identical coupon cards -->
+                            <div class="coupon-card">
+                                <div class="coupon-header">
+                                    <div class="store-logo">
+                                        <a href="#">
+                                            <img src="/www.dontpayfull.com/images/logo/le.png" alt="Luxury Escapes Logo">
+                                        </a>
+                                    </div>
+                                    <div class="store-info">
+                                        <span>Luxury Escapes</span>
+                                        <br>
+                                        <span>Verified Deal</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-body">
+                                    <h3 class="coupon-title">Get 30% Off on All Tour Packages</h3>
+                                    <div class="coupon-expiry">Ends in 20 days</div>
+                    
+                                    <div class="scratch-area">
+                                        <div class="scratch-message" id="couponCode1">TOURSALE</div>
+                                        <canvas id="scratchCanvas1" width="250" height="100" style="position: absolute; top: 0; left: 0;"></canvas>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-footer">
+                                    Limited Time Offer
+                                </div>
+                            </div>
+                    
+                            <!-- Repeat this div 5 more times for 6 total cards -->
+                            <!-- You can change the coupon codes or offer details in each card for variety -->
+                    
+                            <!-- Repeat Coupon Card for the other five cards -->
+                            <div class="coupon-card">
+                                <div class="coupon-header">
+                                    <div class="store-logo">
+                                        <a href="#">
+                                            <img src="/www.dontpayfull.com/images/banners/vici.png" alt="VICI Collection logo">
+                                        </a>
+                                    </div>
+                                    <div class="store-info">
+                                        <span>VICI Collections</span>
+                                        <br>
+                                        <span>Verified Deal</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-body">
+                                    <h3 class="coupon-title">Extra 25% off Sale items!</h3>
+                                    <br>
+                                    <div class="coupon-expiry">Ends in 10 days</div>
+                    
+                                    <div class="scratch-area">
+                                        <div class="scratch-message" id="couponCode2">NOV25</div>
+                                        <canvas id="scratchCanvas2" width="250" height="100" style="position: absolute; top: 0; left: 0;"></canvas>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-footer">
+                                    Limited Time Offer
+                                </div>
+                            </div>
+                    
+                            <!-- Additional cards with similar structure here -->
+                              <!-- Repeat Coupon Card for the other five cards -->
+                            <div class="coupon-card">
+                                <div class="coupon-header">
+                                    <div class="store-logo">
+                                        <a href="#">
+                                            <img src="/www.dontpayfull.com/images/logo/kitsca.png" alt="Kitsca Logo">
+                                        </a>
+                                    </div>
+                                    <div class="store-info">
+                                        <span>Kitsca Glasses</span>
+                                        <br>
+                                        <span>Verified Deal</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-body">
+                                    <h3 class="coupon-title">GET 25% OFF LENS UPGRADES</h3>
+                                    <div class="coupon-expiry">Ends in 10 days</div>
+                    
+                                    <div class="scratch-area">
+                                        <div class="scratch-message" id="couponCode3">THANKYOU25</div>
+                                        <canvas id="scratchCanvas3" width="250" height="100" style="position: absolute; top: 0; left: 0;"></canvas>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-footer">
+                                    Limited Time Offer
+                                </div>
+                            </div>
+
+                             <!-- Repeat Coupon Card for the other five cards -->
+                             <div class="coupon-card">
+                                <div class="coupon-header">
+                                    <div class="store-logo">
+                                        <a href="#">
+                                            <img src="/www.dontpayfull.com/images/logo/adidasmal.png" alt="adidas Logo">
+                                        </a>
+                                    </div>
+                                    <div class="store-info">
+                                        <span>adidas Malaysia</span>
+                                        
+                                        <span>Verified Deal</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-body">
+                                    <h3 class="coupon-title">11.11 SALE | Up to 50% off + EXTRA 20% off at cart | Don't miss it!</h3>
+                                    <div class="coupon-expiry">Ends in 10 days</div>
+                                    <br>
+                                
+                    
+                                    <div class="scratch-area">
+                                        <div class="scratch-message" id="couponCode4">11:11</div>
+                                        <canvas id="scratchCanvas4" width="250" height="100" style="position: absolute; top: 0; left: 0;"></canvas>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-footer">
+                                    Limited Time Offer
+                                </div>
+                            </div>
+
+                             <!-- Repeat Coupon Card for the other five cards -->
+                             <div class="coupon-card">
+                                <div class="coupon-header">
+                                    <div class="store-logo">
+                                        <a href="#">
+                                            <img src="/www.dontpayfull.com/images/logo/lull.png" alt="Lull Logo">
+                                        </a>
+                                    </div>
+                                    <div class="store-info">
+                                        <span>Lull Mattresses</span>
+                                        <br>
+                                        <span>Verified Deal</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-body">
+                                    <h3 class="coupon-title">Enjoy 50% off your first mattress, and an EXTRA 15% off any additional mattress purchase!
+
+                                    </h3>
+                                    <div class="coupon-expiry">Ends in 10 days</div>
+                    
+                                    <div class="scratch-area">
+                                        <div class="scratch-message" id="couponCode5">DBLCXKP</div>
+                                        <canvas id="scratchCanvas5" width="250" height="100" style="position: absolute; top: 0; left: 0;"></canvas>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-footer">
+                                    Limited Time Offer
+                                </div>
+                            </div>
+                    
+                        </div>
+                    
+                        <script>
+                            function initializeScratchCard(canvasId, codeId) {
+                                const canvas = document.getElementById(canvasId);
+                                const ctx = canvas.getContext('2d');
+                    
+                                ctx.fillStyle = '#b0b0b0';
+                                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                                ctx.fillStyle = '#666';
+                                ctx.font = '20px Arial';
+                                ctx.fillText('Scratch to reveal', 60, 55);
+                    
+                                let isScratching = false;
+                    
+                                function scratch(e) {
+                                    if (!isScratching) return;
+                    
+                                    const rect = canvas.getBoundingClientRect();
+                                    const x = e.clientX - rect.left;
+                                    const y = e.clientY - rect.top;
+                    
+                                    ctx.globalCompositeOperation = 'destination-out';
+                                    ctx.beginPath();
+                                    ctx.arc(x, y, 20, 0, Math.PI * 2);
+                                    ctx.fill();
+                                }
+                    
+                                canvas.addEventListener('mousedown', () => { isScratching = true; });
+                                canvas.addEventListener('mouseup', () => { isScratching = false; });
+                                canvas.addEventListener('mousemove', scratch);
+                    
+                                canvas.addEventListener('touchstart', () => { isScratching = true; });
+                                canvas.addEventListener('touchend', () => { isScratching = false; });
+                                canvas.addEventListener('touchmove', (e) => {
+                                    const touch = e.touches[0];
+                                    scratch({ clientX: touch.clientX, clientY: touch.clientY });
+                                });
+                            }
+                    
+                            // Initialize each scratch card by ID
+                            initializeScratchCard('scratchCanvas1', 'couponCode1');
+                            initializeScratchCard('scratchCanvas2', 'couponCode2');
+                            initializeScratchCard('scratchCanvas3', 'couponCode3');
+                            initializeScratchCard('scratchCanvas4', 'couponCode4');
+                            initializeScratchCard('scratchCanvas5', 'couponCode5');
+                            // Add more initialize calls for additional scratch cards if necessary
+                        </script>
+                    
 
 
 
@@ -26527,6 +26866,31 @@
 
 
 
+
+
+                    </ol>
+                </div>
+            </section>
+
+
+
+
+
+
+            <section class="homepage banners">
+                <div class="container" style="max-width: 1200px; margin: 0 auto;">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <a href="#">
+                                <video autoplay muted loop style="width: 100%; height: auto; max-height: 400px; object-fit: cover;">
+                                    <source src="/www.dontpayfull.com/images/banners/6917244_Motion Graphics_Motion Graphic_3840x2160.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -26640,369 +27004,7 @@
 
 
 
-            <section class="homepage banners">
-                <div class="container" style="max-width: 1200px; margin: 0 auto;">
-                    <div class="owl-carousel">
-                        <div class="item">
-                            <a href="#">
-                                <video autoplay muted loop style="width: 100%; height: auto; max-height: 400px; object-fit: cover;">
-                                    <source src="/www.dontpayfull.com/images/banners/6917244_Motion Graphics_Motion Graphic_3840x2160.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-
-
-
-
-
-
-
-           
-
-
-
-
-
-
-            <section class="homepage offers">
-                <div class="container">
-                    <h1 class="h3">Today's Most Popular Coupons & Deals</h1>
-                    <ol id="homepage-coupons" class="coupons-container two-cols">
-                        <li class="obox code" id="c99412887" data-id="99412887" data-sid="359200" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-                  
-                    <a href="#" title="VICI coupons">
-                        <img src="www.dontpayfull.com/images/banners/vici.png"
-                            class="img-responsive lazy-load hover-effect" alt="VICI Collection Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="https://www.vicicollection.com/collections/dresses-jumpsuits">VICI</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Get 40% Off on All dresses-jumpsuits</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-01">in 20 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">SAVE40</div>
-            </div>
-        </div>
-        <img data-src='https://www.vicicollection.com/collections/dresses-jumpsuits' class='lazytrack' alt='99412887'>
-    </li>
-
-    <li class="obox code" id="c99412888" data-id="99412888" data-sid="359201" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-                  
-                    <a href="#" title="VICI coupons">
-                        <img src="www.dontpayfull.com/images/logo/png-clipart-flipkart-e-commerce-logo-bangalore-chief-executive-others-miscellaneous-blue-thumbnail.png"
-                            class="img-responsive lazy-load hover-effect" alt="Flipkart Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="#">Flipkart</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Get 40% Off on All Electronics products</h3>
-
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-01">in 20 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">SAVE40</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412888?source=' class='lazytrack' alt='99412888'>
-    </li>
-
-    <li class="obox code" id="c99412889" data-id="99412889" data-sid="359202" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-
-                <div class="otype">
-                  
-                    <a href="#" title="VICI coupons">
-                        <img src="www.dontpayfull.com/images/logo/kisspng-domino-s-pizza-enterprises-pizza-delivery-take-out-ktv-5b07f81ad7ac22.4796448615272489228834.jpg"
-                            class="img-responsive lazy-load hover-effect" alt="Dominos Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="#">Dominos Pizza</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Get 40% Off on All Pizza</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-01">in 20 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">SAVE40</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412890?source=' class='lazytrack' alt='99412890'>
-    </li>
-
-    <li class="obox code" id="c99412889" data-id="99412889" data-sid="359202" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-
-                <div class="otype">
-                  
-                    <a href="#" title="Xiaomi coupons">
-                        <img src="www.dontpayfull.com/images/logo/round-circle-mi-xiaomi-icon-logo-701751695132551sf8a2iincn.png"
-                            class="img-responsive lazy-load hover-effect" alt="Xiaomi Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="#">Xiaomi Pizza</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Get 10% Off on All New Smartphones</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-01">in 20 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">SAVE40</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412890?source=' class='lazytrack' alt='99412890'>
-    </li>
-    <li class="obox code" id="c99412887" data-id="99412887" data-sid="359200" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-                  
-                    <a href="#" title="Amazon coupons">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            data-src="https://cdn2.dontpayfull.com/media/logos/size/180x180/amazon.com.jpg?v=20220503075117294939"
-                            class="img-responsive lazy-load hover-effect" alt="Amazon Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="https://www.dontpayfull.com/at/amazon.com">Amazon</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Get 20% Off on Your First Purchase</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-01">in 15 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">AMAZON20</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412887?source=' class='lazytrack' alt='99412887'>
-    </li>
-
-    <li class="obox code" id="c99412888" data-id="99412888" data-sid="359201" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    data-src="https://cdn3.dontpayfull.com/media/logos/size/180x180/nykaa.com.jpg"
-                    class="img-responsive lazy-load hover-effect" alt="Nykaa Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="https://www.dontpayfull.com/at/nykaa.com">Nykaa</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Flat 25% Off on Selected Products</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-10">in 25 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">NYK25</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412888?source=' class='lazytrack' alt='99412888'>
-    </li>
-
-    <li class="obox code" id="c99412889" data-id="99412889" data-sid="359202" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 data-src="https://cdn3.dontpayfull.com/media/logos/size/180x180/ajio.com.jpg"
-                                 class="img-responsive lazy-load hover-effect" alt="Ajio Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="https://www.dontpayfull.com/at/ajio.com">Ajio</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Up to 50% Off on Clothes</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-15">in 30 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">SNAP50</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412889?source=' class='lazytrack' alt='99412889'>
-    </li>
-
-    <li class="obox code" id="c99412890" data-id="99412890" data-sid="359203" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    data-src="https://cdn3.dontpayfull.com/media/logos/size/180x180/bigbasket.com.jpg"
-                    class="img-responsive lazy-load hover-effect" alt="BigBasket Coupons">
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="https://www.dontpayfull.com/at/bigbasket.com">BigBasket</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Get 10% Off on Your First Order</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-20">in 35 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">BB10</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412890?source=' class='lazytrack' alt='99412890'>
-    </li>
-
-    <li class="obox code" id="c99412891" data-id="99412891" data-sid="359204" data-coupon="yes" data-deal="no" data-freeshipping="no" data-verified="yes" data-type="c" data-otype="code">
-        <div class="ocontent">
-            <div class="odata">
-                <div class="otype">
-
-    <a href="https://www.dontpayfull.com/at/paytm.com" title="Paytm coupons">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-             data-src="https://cdn3.dontpayfull.com/media/logos/size/180x180/paytm.com.jpg"
-             class="img-responsive lazy-load" alt="Paytm Coupons">
-    </a>
-    
-                </div>
-                <div class="obody">
-                    <div class="otop">
-                        <div class="ostats">
-                            <div class="overified">Verified</div>
-                            <div class="ostore">
-                                <a href="https://www.dontpayfull.com/at/paytm.com">Paytm</a>
-                            </div>
-                        </div>
-                        <div class="odisplay">
-                            <h3 class="otitle">Flat 15% Off on Mobile Recharges</h3>
-                        </div>
-                    </div>
-                    <div class="obottom">
-                        <div class="oexpire">
-                            Ends <time datetime="2024-11-30">in 45 days</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ohop code">
-                <div class="code-action">Get code</div>
-                <div class="ocode">PAY15</div>
-            </div>
-        </div>
-        <img data-src='https://www.dontpayfull.com/coupons/trackview/id/99412891?source=' class='lazytrack' alt='99412891'>
-    </li>
-                    </ol>
-                </div>
-            </section>
-
+          
 
 
 
