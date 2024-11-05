@@ -5,7 +5,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DealFoxes: Coupon Codes, Coupons, Promo Codes, Free Shipping and Discounts</title>
     <meta name="description" content="Find the best deals and discounts on popular brands with exclusive coupons at DealFoxes. Save more with our handpicked offers!">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -26538,11 +26538,16 @@
             
 
 
-            <section class="homepage offers">
-                <div class="container">
-                    <h1 class="h3">Today's Most Popular Coupons & Deals</h1>
-                    <ol id="homepage-coupons" class="coupons-container two-cols">
-                      
+            <main>
+                <div class="container main-container">
+                    <div class="row">
+                        <!-- <div class="col-md-9 col-xs-12 main pull-md-right clearfix"> -->
+                            <h1>Accessories Coupon & Discount Codes</h1>
+                            <div id="categories-coupons" class="clearfix">
+                                <section class="homepage offers">
+                                    <div class="container">
+                                        <h1 class="h3">Today's Most Popular Coupons & Deals</h1>
+                                        <ol id="homepage-coupons" class="coupons-container two-cols">
 
 
 
@@ -26647,6 +26652,39 @@
                                 color: #718096;
                                 font-weight: bold;
                             }
+                            /* Responsive Card Style */
+.card {
+    flex: 1 1 300px; /* Allows the card to grow and shrink */
+    min-width: 250px; /* Sets minimum width for smaller screens */
+    max-width: 400px; /* Sets maximum width */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .card h3 {
+        font-size: 1.2em;
+    }
+    
+    .card button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
                         </style>
                     </head>
                     <body>
@@ -26809,6 +26847,47 @@
                                     Limited Time Offer
                                 </div>
                             </div>
+
+
+
+                              <!-- Repeat Coupon Card for the other five cards -->
+                              <div class="coupon-card">
+                                <div class="coupon-header">
+                                    <div class="store-logo">
+                                        <a href="#">
+                                            <img src="/www.dontpayfull.com/images/logo/lovebonito.png" alt="Love Bonito Logo">
+                                        </a>
+                                    </div>
+                                    <div class="store-info">
+                                        <span>Love Bonito</span>
+                                        <br>
+                                        <span>Verified Deal</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-body">
+                                    <h3 class="coupon-title">Enjoy 10% off with no min. spend for your first order
+
+                                    </h3>
+
+                                    <div class="coupon-expiry">Ends in 10 days</div>
+                    <br>
+                    <br>
+                                    <div class="scratch-area">
+                                        <div class="scratch-message" id="couponCode6">HELLOINTL10</div>
+                                        <canvas id="scratchCanvas6" width="250" height="100" style="position: absolute; top: 0; left: 0;"></canvas>
+                                    </div>
+                                </div>
+                    
+                                <div class="coupon-footer">
+                                    Limited Time Offer
+                                </div>
+                            </div>
+
+
+
+
+                           
                     
                         </div>
                     
@@ -26856,6 +26935,7 @@
                             initializeScratchCard('scratchCanvas3', 'couponCode3');
                             initializeScratchCard('scratchCanvas4', 'couponCode4');
                             initializeScratchCard('scratchCanvas5', 'couponCode5');
+                            initializeScratchCard('scratchCanvas6', 'couponCode6');
                             // Add more initialize calls for additional scratch cards if necessary
                         </script>
                     
@@ -27378,6 +27458,7 @@
             
 
         </footer>
+        
 
     </div>
     <div style="display: none" class=" message" id="alert-message">
