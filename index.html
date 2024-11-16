@@ -5,6 +5,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google1d7bf44f17e28bc3" />
 
     <title>DealFoxes: Coupon Codes, Coupons, Promo Codes, Free Shipping and Discounts</title>
     <meta name="description" content="Find the best deals and discounts on popular brands with exclusive coupons at DealFoxes. Save more with our handpicked offers!">
@@ -25977,7 +25978,7 @@
              
                         
                         <div class="search">
-                            <form action="https://www.dontpayfull.com/s/search" id="top-search-form"
+                            <form action="" id="top-search-form"
                                 class="store-search text-left">
                                 <div class="input-group input-group-lg search-wrap">
                                     <button type="submit" class="input-group-addon" aria-label="Search">
@@ -26098,18 +26099,29 @@
                     
                             /* Dropdown styles */
                             .submenu {
-                                display: none;
-                                position: absolute;
-                                left: 0;
-                                top: 100%;
-                                background-color: #ffffff;
-                                border: 1px solid #ddd;
-                                border-radius: 8px;
-                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                padding: 10px 0;
-                                z-index: 1000;
-                            }
-                    
+                                display: none; /* Hidden by default */
+    position: absolute; /* Position relative to parent <li> */
+    top: 100%; /* Dropdown opens below the parent */
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 99999; /* Ensure it's on top of everything */
+    width: 200px; /* Adjust width as needed */
+}
+
+.nav-links li {
+    position: relative; /* Parent <li> is the reference for positioning */
+}
+
+
+body, html, .container, .header-nav {
+    overflow: visible !important;
+    position: relative !important;
+    z-index: auto !important;
+}
                             .nav-links li:hover .submenu {
                                 display: block;
                             }
@@ -26226,11 +26238,6 @@
                     </ul>
                 </div>
             </nav>
-            <nav class="header-nav">
-                <div class="container">
-                </div>
-                </nav>
-
         </header>
 
         
@@ -26385,9 +26392,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="homepage banners bg-white">
     <div class="container">
-<div class="carousel"></div>
+<div class="carousel">
     <div class="carousel-track">
         <a href="https://example.com/poster1" target="_blank">
       <img src="/www.dontpayfull.com/images/banners/1.png" alt="Poster 1" class="carousel-image">
@@ -26429,70 +26473,335 @@
             <img src="/www.dontpayfull.com/images/banners/3.png" alt="Poster 3" class="carousel-image">
             </a>
          
-      
+      </div>
     </div>
   </div>
   </section>
 
   <style>
-  * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
-
-
-
-.carousel-track {
-  display: flex;
-  gap: 20px; /* Adjust gap between images as needed */
-  animation: scroll 30s linear infinite;
-}
-
-.carousel-image {
-
-  transition: transform 0.5s;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-image:hover {
-  transform: scale(1.05);
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-  </style>
-
-  <script>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        overflow: hidden;
+        max-width: 100%;
+    }
+    
+    .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .carousel-track {
+        display: flex;
+        gap: 20px;
+        animation: scroll 20s linear infinite;
+    }
+    
+    .carousel-image {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Responsive Design */
+    
+    /* Large Screens (Desktops) */
+    @media (min-width: 1024px) {
+        .carousel-image {
+            width: 550px;
+        }
+    }
+    
+    /* Medium Screens (Tablets) */
+    @media (max-width: 1023px) {
+        .carousel-image {
+            width: 180px;
+        }
+    }
+    
+    /* Small Screens (Mobile Phones) */
+    @media (max-width: 767px) {
+        .carousel-image {
+            width: 120px;
+        }
+    }
+    
+    /* Animation */
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-200px * 6)); /* Moves based on image width and count */
+        }
+    }
+    </style>
+    
+    <script>
     document.addEventListener('DOMContentLoaded', () => {
-  const carouselTrack = document.querySelector('.carousel-track');
-  const images = Array.from(document.querySelectorAll('.carousel-image'));
-  
-  // Duplicate images to create seamless scroll
-  images.forEach((image) => {
-    const clone = image.cloneNode(true);
-    carouselTrack.appendChild(clone);
-  });
-});
+        const carouselTrack = document.querySelector('.carousel-track');
+        const images = Array.from(document.querySelectorAll('.carousel-image'));
+        
+        // Clone images to create a continuous scroll effect
+        images.forEach((image) => {
+            const clone = image.cloneNode(true);
+            carouselTrack.appendChild(clone);
+        });
+    });
+    </script>
 
-  </script>
+
+
+
+
+
+
+
+
+
+<section class="bg-section bg-white">
+    <div class="container">
+        <h1>Exclusive Coupon Deals</h1>
+        <div class="coupon-wrapper">
+
+
+            <div class="coupon-card">
+                <div class="coupon-inner">
+                    <div class="coupon-front">
+                        <div class="offer-badge">10% Off</div> <!-- Offer Badge -->
+                        <img src="/www.dontpayfull.com/images/logo/le.png" alt="Electronics" class="coupon-image">
+                        <h3 class="deal-title">American Express customers can save up to $300!</h3>
+                        <p class="deal-description">Earn 10% back with American Express</p>
+                        <!-- <button class="redeem-button" onclick="copyCouponCode('click here to claim')">Redeem Now</button> -->
+                    </div>
+                    <div class="coupon-back">
+                        <h3 class="coupon-code">Coupon Code: <span id="coupon-code-electronics">click here to claim</span></h3>
+                        <button class="copy-button" onclick="copyCouponCode('click here to claim')">Copy Coupon Code</button>
+                        <p class="terms">Expires on: 31 Dec 2024</p>
+                        <button class="go-to-website-button" onclick="window.location.href='https://luxuryescapes.com/us';">Go to Store</button>
+                    </div>
+                </div>
+            </div> 
+
+           
+
+            <!-- Another Example Coupon Card -->
+           <div class="coupon-card">
+                <div class="coupon-inner">
+                    <div class="coupon-front">
+                        <div class="offer-badge">75% Off</div> <!-- Offer Badge -->
+                        <img src="/www.dontpayfull.com/images/banners/coursera.png" alt="Electronics" class="coupon-image">
+                        <h3 class="deal-title">Coursera Plus for INR 7999.
+                        </h3>
+                        <p class="deal-description">Get your favorite courses at more than half price!</p>
+                        <!-- <button class="redeem-button" onclick="copyCouponCode('just visit the Coursera store')">Redeem Now</button> -->
+                    </div>
+                    <div class="coupon-back">
+                        <h3 class="coupon-code">Coupon Code: <span id="coupon-code-electronics">Claim your offer with just one click</span></h3>
+                        <button class="copy-button" onclick="copyCouponCode('just visit the coursera store')">Copy Coupon Code</button>
+                        <p class="terms">Expires on: 31 Dec 2024</p>
+                        <button class="go-to-website-button" onclick="window.location.href='https://coursera.org/?irclickid=yHG2YbzFuxyKUEfVXTRx9TaHUkCRDA1iCXIJ2A0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3952899&utm_content=b2c';">Go to Store</button>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- another card -->
+            <div class="coupon-card">
+                <div class="coupon-inner">
+                    <div class="coupon-front">
+                        <div class="offer-badge">$1,000 Off</div> <!-- Offer Badge -->
+                        <img src="/www.dontpayfull.com/images/logo/lull.png" alt="Nike" class="coupon-image">
+                        <h3 class="deal-title">Save Up To $1,000 On Mattresses!</h3>
+                        <p class="deal-description">Unbeatable Mattress Deals
+
+                            Don’t Miss Your Chance to Save Big</p>
+                        <!-- <button class="redeem-button" onclick="copyCouponCode('DBLCXKP')">Redeem Now</button> -->
+                    </div>
+                    <div class="coupon-back">
+                        <h3 class="coupon-code">Coupon Code: <span id="coupon-code-nike">DBLCXKP</span></h3>
+                        <button class="copy-button" onclick="copyCouponCode('DBLCXKP')">Copy Coupon Code</button>
+                        <p class="terms">Expires on: 31 Dec 2024</p>
+                        <button class="go-to-website-button" onclick="window.location.href='https:https:https://lull.com/?irclickid=xb2X5PywGxyKTdc0vezJb3UBUkCTg0RNOVhXWY0&utm_source=Partnermatic&utm_medium=%22review_site%22&utm_campaign=3426829&utm_content=&irgwc=1';">Go to Nike</button>
+                    </div>
+                </div>
+            </div>
+            <!-- another card  -->
+
+ <!-- Example Coupon Card for Nike -->
+ <div class="coupon-card">
+    <div class="coupon-inner">
+        <div class="coupon-front">
+            <div class="offer-badge">10% Off</div> <!-- Offer Badge -->
+            <img src="/www.dontpayfull.com/images/logo/adidasmal.png" alt="Nike" class="coupon-image">
+            <h3 class="deal-title">10% Off on Nike</h3>
+            <p class="deal-description">Shop the latest Nike gear and save big!</p>
+            <!-- <button class="redeem-button" onclick="copyCouponCode('APP10')">Redeem Now</button> -->
+        </div>
+        <div class="coupon-back">
+            <h3 class="coupon-code">Coupon Code: <span id="coupon-code-nike"> APP10</span></h3>
+            <button class="copy-button" onclick="copyCouponCode('APP10')">Copy Coupon Code</button>
+            <p class="terms">Expires on: 31 Dec 2024</p>
+            <button class="go-to-website-button" onclick="window.location.href='https://www.nike.com/my/';">Go to Nike</button>
+        </div>
+    </div>
+</div>
+
+
+         
+
+
+           
+
+
+
+            <!-- another card -->
+           
+        </div>
+    </div>
+
+</section>
+<style>
+    /* Background section styling */
+    .bg-section {
+        background: url('/www.dontpayfull.com/images/banners/bgcard.png') no-repeat center center;
+        background-size: cover;
+    height: 55vh; /* Adjust height to make it smaller */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for styling */
+    border-radius: 20px; /* Optional: Round corners */
+    margin: 20px auto; /* Center the section */
+    width: 90%; /* Reduce width */
+}
+    
+    /* Container styling */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    h1 {
+        color: black;
+    }
+    
+    /* Coupon Wrapper: Horizontal Scroll */
+    .coupon-wrapper {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .coupon-card {
+        flex: 0 0 auto; /* Ensures cards stay in row */
+        scroll-snap-align: start;
+        width: 250px;
+        height: 385px;
+        perspective: 1000px;
+    }
+    
+    /* Card Flip Effect */
+    .coupon-inner {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        position: relative;
+    }
+    
+    .coupon-card:hover .coupon-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .coupon-front, .coupon-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .coupon-back {
+        background-color: #f1f1f1;
+        transform: rotateY(180deg);
+    }
+    
+    /* Offer Badge and Buttons */
+    .offer-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #34c759;
+        color: white;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .coupon-image {
+        width: 250px;
+        height: 420px;
+    }
+    
+    button {
+        background-color: #ff7e5f;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    /* Media Queries for Responsiveness */
+    @media (max-width: 576px) {
+        .coupon-card {
+            width: 200px;
+            height: 300px;
+        }
+    }
+    </style>
+    
+    <script>
+    function copyCouponCode(couponCode) {
+        navigator.clipboard.writeText(couponCode)
+            .then(() => {
+                alert(`Coupon Code '${couponCode}' copied to clipboard!`);
+            })
+            .catch(() => {
+                alert('Failed to copy coupon code');
+            });
+    }
+    </script>
+
+
+
+
+
+
+
 
 
 
@@ -26614,25 +26923,50 @@ body {
 
 
 
-
-
-
-            
-            
-            <section class="homepage banners bg-white">
+<section class="homepage banners">
                 <div class="container">
                     <!-- <video autoplay muted loop class="responsive-video">
                         <source src="/www.dontpayfull.com/images/banners/le (online-video-cutter.com).mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video> -->
-                    <video width="100%" height="auto" controls autoplay muted playsinline onplay="this.muted=false">
+                    <video class="responsive-video" autoplay muted playsinline loop>
                         <source src="/www.dontpayfull.com/images/banners/le (online-video-cutter.com).mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </section>
 
+<style>
+/* Reset basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Additional responsiveness adjustments */
+@media (min-width: 768px) {
+    .responsive-video {
+        width: 90%;
+        max-height: 500px; /* Set max height on larger screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-video {
+        width: 100%;
+    }
+}
+</style>
 
 
 
@@ -26786,7 +27120,7 @@ body {
     }
 }
                         </style>
-                    </head>
+                   
                     <body>
                         <div class="coupon-container">
                             <!-- Six identical coupon cards -->
@@ -27276,7 +27610,7 @@ body {
                                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                                 }
                             </style>
-                </head>
+               
                 <body>
                 
                 <div class="offer-banner">
@@ -27348,67 +27682,7 @@ body {
 
 
 
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.32/build/spline-viewer.js"></script>
-
-            <!-- Container for the 3D model and heading -->
-        <div class="container">
-            <div class="flex-container">
-                <!-- 3D model on the left -->
-                <div class="left">
-                    <spline-viewer style="width: 100%; height: 500px;" url="https://prod.spline.design/9zLjSKjqyImKbyWW/scene.splinecode"></spline-viewer>
-                </div>
-            
-                <!-- Heading on the right -->
-                <div class="right">
-                    <h1>Unlock Exclusive Deals with Dealfoxes</h1>
-                    <p class="small-paragraph">"Find the best deals and exclusive coupons for your favorite brands. Save money effortlessly by using our handpicked offers—start shopping smarter today!"
-
-                    </p>
-                </div>
-            </div>
-       <style>
-           /* Flexbox container for 2 columns */
-       .flex-container {
-           display: flex;
-           align-items: center; /* Center vertically */
-           justify-content: space-between; /* Space out the columns */
-           gap: 20px; /* Add some space between the columns */
-           padding: 20px; /* Add padding around the container */
-       }
-       .small-paragraph {
-    font-size: 14px; /* Adjust to your desired size */
-    color: #555; /* Optional: Change text color */
-    line-height: 1.5; /* Adjust line spacing for readability */
-}
-       
-       /* Left side with the 3D model */
-       .left {
-           flex: 1; /* Take up 50% of the space */
-           max-width: 50%; /* Ensure the width doesn't exceed 50% */
-       }
-       
-       /* Right side with the heading */
-       .right {
-           flex: 1; /* Take up 50% of the space */
-           max-width: 50%; /* Ensure the width doesn't exceed 50% */
-           padding-left: 20px; /* Add some space between the text and the 3D model */
-       }
-       
-       /* Style for the heading and paragraph */
-       .right h1 {
-           font-size: 2em;
-           margin-bottom: 10px;
-       }
-       
-       .right p {
-           font-size: 1.2em;
-           color: #555; /* Adjust the color as per your theme */
-       }
-       
-       </style>     
-           
-       
-
+          
 
 
 
