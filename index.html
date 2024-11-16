@@ -26592,7 +26592,7 @@ body, html, .container, .header-nav {
 
 <section class="bg-section bg-white">
     <div class="container">
-        <h1>Exclusive Coupon Deals</h1>
+        <h11>Exclusive Coupon Deals</h11>
         <div class="coupon-wrapper">
 
 
@@ -26692,9 +26692,31 @@ body, html, .container, .header-nav {
 
 </section>
 <style>
+
+h11 {
+    font-size: 3rem; /* Adjust the font size */
+    font-family: 'Arial', sans-serif; /* Choose a modern font */
+    color: #fff; /* Default text color */
+    text-transform: uppercase; /* Make text all caps */
+    letter-spacing: 2px; /* Space out the letters */
+    position: relative; /* For adding the glow effect */
+    display: inline-block;
+    text-align: center;
+    animation: shine 2s ease-in-out infinite; /* Add animation to the text */
+}
+
+/* Gradient Text Effect */
+h11 {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient color */
+    -webkit-background-clip: text; /* Apply the gradient to the text itself */
+    background-clip: text;
+    color: transparent;
+}
+
+
     /* Background section styling */
     .bg-section {
-        background: url('/www.dontpayfull.com/images/banners/bgcard.png') no-repeat center center;
+        background: url('/www.dontpayfull.com/images/banners/28677.jpg') no-repeat center center;
         background-size: cover;
     height: 55vh; /* Adjust height to make it smaller */
     display: flex;
@@ -26705,7 +26727,7 @@ body, html, .container, .header-nav {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for styling */
     border-radius: 20px; /* Optional: Round corners */
     margin: 20px auto; /* Center the section */
-    width: 90%; /* Reduce width */
+    width: 70%; /* Reduce width */
 }
     
     /* Container styling */
@@ -26715,9 +26737,9 @@ body, html, .container, .header-nav {
         text-align: center;
     }
     
-    h1 {
+    /* h1 {
         color: black;
-    }
+    } */
     
     /* Coupon Wrapper: Horizontal Scroll */
     .coupon-wrapper {
@@ -26815,6 +26837,124 @@ body, html, .container, .header-nav {
             });
     }
     </script>
+
+
+
+
+
+
+
+
+
+    <!-- Video Popup -->
+    <div id="video-popup" class="popup">
+        <div class="popup-content">
+            <video id="popup-video" width="600"  autoplay>
+                <source src="/www.dontpayfull.com/images/banners/wintersale.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="close-popup" class="close-btn">×</button>
+        </div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div class="content">
+        <h1>Welcome to DealFoxes</h1>
+        <p>Get the best winter deals and coupons!</p>
+        <!-- Your website content here -->
+    </div>
+
+
+    <style>
+   /* Style the Popup */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#popup-video {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e13333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Optional Styling for Main Content */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 90%; /* Make popup content take up more space on smaller screens */
+        padding: 10px;
+    }
+
+    .close-btn {
+        font-size: 16px; /* Adjust the close button size on smaller screens */
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        width: 95%; /* Even more space taken by popup content on very small screens */
+    }
+
+    .close-btn {
+        font-size: 14px; /* Smaller close button on very small screens */
+        padding: 6px;
+    }
+}
+    </style>
+
+<script>
+    // Show the video popup when the page loads
+window.onload = function() {
+    document.getElementById('video-popup').style.display = 'flex';
+};
+
+// Close the popup when the user clicks the close button
+document.getElementById('close-popup').onclick = function() {
+    document.getElementById('video-popup').style.display = 'none';
+};
+
+</script>
+
+
+
+
+
+
 
 
 
