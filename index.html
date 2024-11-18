@@ -26451,52 +26451,28 @@ body, html, .container, .header-nav {
             </a>
 
             <a href="https://travelbrands.sjv.io/Mm09VN" target="_blank">
-                <img src="/www.dontpayfull.com/images/banners/102.png" alt="Poster 1" class="carousel-image">
+                <img src="/www.dontpayfull.com/images/banners/102.png" alt="Poster 2" class="carousel-image">
                 </a>
 
                 <a href="https://temuaffiliateprogram.pxf.io/B0jKzy" target="_blank">
-                    <img src="/www.dontpayfull.com/images/banners/103.png" alt="Poster 1" class="carousel-image">
+                    <img src="/www.dontpayfull.com/images/banners/103.png" alt="Poster 3" class="carousel-image">
                     </a>
 
         <a href="https://example.com/poster1" target="_blank">
-      <img src="/www.dontpayfull.com/images/banners/1.png" alt="Poster 1" class="carousel-image">
+      <img src="/www.dontpayfull.com/images/banners/1.png" alt="Poster 4" class="carousel-image">
       </a>
       <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=33578&org=2615" target="_blank">
-      <img src="/www.dontpayfull.com/images/banners/2.png" alt="Poster 2" class="carousel-image">
+      <img src="/www.dontpayfull.com/images/banners/2.png" alt="Poster 5" class="carousel-image">
       </a>
       <a href="https://www.coursera.org/?irclickid=yHG2YbzFuxyKUEfVXTRx9TaHUkCTSEWhOVhowQ0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4145592&utm_content=b2c" target="_blank">
-        <img src="/www.dontpayfull.com/images/banners/4.png" alt="Poster 1" class="carousel-image">
+        <img src="/www.dontpayfull.com/images/banners/4.png" alt="Poster 6" class="carousel-image">
         </a>
       <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=33578&org=2615" target="_blank">
-      <img src="/www.dontpayfull.com/images/banners/3.png" alt="Poster 3" class="carousel-image">
+      <img src="/www.dontpayfull.com/images/banners/3.png" alt="Poster 7" class="carousel-image">
       </a>
     
       <!-- Duplicate the images for seamless scroll -->
-      <a href="https://example.com/poster1" target="_blank">
-        <img src="/www.dontpayfull.com/images/banners/1.png" alt="Poster 1" class="carousel-image">
-        </a>
-        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=33578&org=2615" target="_blank">
-        <img src="/www.dontpayfull.com/images/banners/2.png" alt="Poster 2" class="carousel-image">
-        </a>
-        <a href="https://www.coursera.org/?irclickid=yHG2YbzFuxyKUEfVXTRx9TaHUkCTSEWhOVhowQ0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4145592&utm_content=b2c" target="_blank">
-            <img src="/www.dontpayfull.com/images/banners/4.png" alt="Poster 1" class="carousel-image">
-            </a>
-        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=33578&org=2615" target="_blank">
-        <img src="/www.dontpayfull.com/images/banners/3.png" alt="Poster 3" class="carousel-image">
-        </a>
-      
-        <a href="https://example.com/poster1" target="_blank">
-            <img src="/www.dontpayfull.com/images/banners/1.png" alt="Poster 1" class="carousel-image">
-            </a>
-            <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=33578&org=2615" target="_blank">
-            <img src="/www.dontpayfull.com/images/banners/2.png" alt="Poster 2" class="carousel-image">
-            </a>
-            <a href="https://www.coursera.org/?irclickid=yHG2YbzFuxyKUEfVXTRx9TaHUkCTSEWhOVhowQ0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4145592&utm_content=b2c" target="_blank">
-                <img src="/www.dontpayfull.com/images/banners/4.png" alt="Poster 1" class="carousel-image">
-                </a>
-            <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=33578&org=2615" target="_blank">
-            <img src="/www.dontpayfull.com/images/banners/3.png" alt="Poster 3" class="carousel-image">
-            </a>
+    
          
       </div>
     </div>
@@ -26529,7 +26505,7 @@ body, html, .container, .header-nav {
     .carousel-track {
         display: flex;
         gap: 20px;
-        animation: scroll 20s linear infinite;
+        animation: scroll 70s linear infinite;
     }
     
     .carousel-image {
@@ -26564,26 +26540,34 @@ body, html, .container, .header-nav {
     
     /* Animation */
     @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-200px * 6)); /* Moves based on image width and count */
-        }
+    0% {
+        transform: translateX(0);
     }
+    100% {
+        transform: translateX(calc(-1 * var(--track-width)));
+    }
+}
+
     </style>
     
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const carouselTrack = document.querySelector('.carousel-track');
-        const images = Array.from(document.querySelectorAll('.carousel-image'));
-        
-        // Clone images to create a continuous scroll effect
-        images.forEach((image) => {
-            const clone = image.cloneNode(true);
-            carouselTrack.appendChild(clone);
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselTrack = document.querySelector('.carousel-track');
+    const images = Array.from(document.querySelectorAll('.carousel-image'));
+    const imageWidth = images[0].offsetWidth + 20; // Include gap between images
+    const totalImages = images.length;
+
+    // Clone images for a seamless scroll
+    images.forEach((image) => {
+        const clone = image.cloneNode(true);
+        carouselTrack.appendChild(clone);
     });
+
+    // Set CSS variable for the total track width (used in @keyframes)
+    const totalWidth = imageWidth * totalImages * 2; // Original + Cloned
+    carouselTrack.style.setProperty('--track-width', `${totalWidth}px`);
+});
+
     </script>
 
 
